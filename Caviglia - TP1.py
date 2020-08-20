@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 
 """
-Código correspondiente al los Problemas 3 y 4 del 1er. Trabajo Práctico de Física Computacional.
+Código correspondiente al los Problemas 3 y 4 del 1er. Trabajo Práctico
+de Física Computacional.
 """
 
 import numpy as np
@@ -239,7 +240,7 @@ def ejercicio_4(name, e=0.00001, factor = 1.5):   # Lo estructuro como función 
 """ Descomentar cada instrucción para obtener las gráficas """
 
 #ejercicio_3_a()
-#ejercicio_3_b()
+ejercicio_3_b()
 #ejercicio_4('1')
 #ejercicio_4('2', e=0.0001)
 #ejercicio_4('3', e=0.001)
