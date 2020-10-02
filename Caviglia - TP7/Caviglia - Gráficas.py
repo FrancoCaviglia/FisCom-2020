@@ -31,7 +31,7 @@ N = 2000   # Cantidad de iteraciones (hasta t = 10)
 tn = np.linspace(0, N * h, N, endpoint = False)
 
 semilla = 1601589908
-"""
+
 ### Gráficas de energía ###
 
 for folder in ["Datos - Libre", "Datos - Rigido", "Datos - Blando"]:
@@ -145,7 +145,6 @@ for folder in ["Datos - Rigido"]:#, "Datos - Blando", "Datos - Libre"]:
         plt.show()
         plt.close()
 
-"""
 ### GIF partículas moviéndose ### 
 
 lista_nombres = [[],[],[]]
@@ -153,7 +152,6 @@ lista_nombres = [[],[],[]]
 for tiempo in range(0,2001):
 
     datos_v = np.loadtxt("Datos - Rigido/vel-"+str(tiempo)+"-"+str(semilla)+".txt", delimiter = ' ').T
-    """
     datos_p = np.loadtxt("Datos - Rigido/pos-"+str(tiempo)+"-"+str(semilla)+".txt", delimiter = ' ').T
 
     f = plt.figure(dpi=100, figsize=(3, 3))
@@ -171,8 +169,8 @@ for tiempo in range(0,2001):
     plt.close()
   
     lista_nombres[0].append("Datos - Rigido/pos-"+str(tiempo)+".png")   
-    """
-    for n in [2]:#,2]:
+
+    for n in [1,2]:
                         
         f = plt.figure(dpi = 100, figsize=(3, 3))
 
@@ -192,3 +190,17 @@ for tiempo in range(0,2001):
 grafica_gif(lista_nombres[0], 'Datos - Rigido/evolución.gif')
 grafica_gif(lista_nombres[1], 'Datos - Rigido/GIF-Histo-x.gif')
 grafica_gif(lista_nombres[2], 'Datos - Rigido/GIF-Histo-y.gif')
+
+""" # Separa las partículas que se excedieron de la caja y las registra en una lista.
+lista_particulas = []
+for i in range(900):
+    lista_particulas.append([])
+for tiempo in range(2001):
+    datos_p = np.loadtxt("Datos - Rigido/pos-"+str(tiempo)+"-"+str(semilla)+".txt", delimiter = ' ')
+    for i in range(900):
+        if datos_p[i][0] > 54.77226 or datos_p[i][0] < 0:
+            lista_particulas[i].append(tiempo)
+        if datos_p[i][1] > 54.77226 or datos_p[i][1] < 0:
+            lista_particulas[i].append(tiempo)
+print(lista_particulas)
+"""
