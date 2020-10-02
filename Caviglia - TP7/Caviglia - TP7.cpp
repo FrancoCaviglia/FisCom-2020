@@ -153,7 +153,7 @@ int main(){
             xn[k][1] += (vn[k][1]*h + fn_0[k][1]*h2);
         }
 
-        chequea(vn, xn, N, L);                          // Revisa que se sigan las condiciones de borde.
+        chequea(vn, xn, N, L);                          // Revisa que se sigan las condiciones de borde en las nuevas posiciones.
 
         en[t][1] = vector_fuerza(fn_1, xn, N);          // Actualiza la fuerza fn_1 del paso n al paso n+1. Al mismo tiempo calcula la energía potencial.
 
