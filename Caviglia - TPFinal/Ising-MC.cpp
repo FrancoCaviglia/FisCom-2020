@@ -4,11 +4,15 @@ Código correspondiente a la entrega del Trabajo Final: Modelo de Ising
 
 Instituto Balseiro - Física Computacional - Franco Caviglia
 
-Versión "standalone" de los códigos usados para generar los datos de interés. Tanto la temperatura como el tamaño del sistema es fijo.
-Al final de la ejecución guarda dos matrices con (1) la energía y magnetizacíon a cada tiempo t, (2) el estado del sistema final.
+Versión "standalone" de los códigos usados para generar los datos de interés. Tanto la temperatura como el tamaño del sistema es
+fijo. Al final de la ejecución guarda dos matrices con (1) la energía y magnetizacíon a cada tiempo t, (2) el estado del sistema
+final. Requiere para su ejecución el arhicvo con funciones auxiliares de nombre "auxiliares.h", el cual debe estar en el mismo
+directorio que el presente archivo.
 
 Para encontrar las versiones optimizadas para cada parte del trabajo por favor difirise a  github.com/FrancoCaviglia/FisCom-2020,
 carpeta "Caviglia - TPFinal".
+
+En todos los casos, la compilación se realizó en C++14.
 
 Última edición: 17-10-2020
 
