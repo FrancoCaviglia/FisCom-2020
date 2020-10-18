@@ -4,7 +4,7 @@
 
 En este repositorio se encuentran los códigos utilizados para la implementación de la simulación por medio del algoritmo de Metrópolis, al a vez que están los usados en el análisis de los datos. Para lo primero se utilizó C++, mientras que para lo segundo se hizo uso de Python. Dado que para cada parte del trabajo se usaron versiones ligeramente diferentes del mismo código, a los efectos de presentarlas de forma organizada se las distribuyó en subcarpetas dentro de */Problemas*, siguiendo como criterio el orden de los problemas de la Guía del Trabajo (sólo a efectos oorientativos).
 
-Una versión del código de la simulación que sólo realiza una ejecución para un tamaño fijo de grilla y pasos de tiempo se muestra en la carpeta principal (*Ising-MC.cpp*). Las restantes versiones agregan sólamente loops, salvo en el caso del *Problema 8* donde la presencia del campo magnético exige ser más cuidadoso con el manejo de las probabilidades en los pasos de montecarlo. 
+Una versión del código de la simulación que sólo realiza una ejecución para un tamaño fijo de grilla y pasos de tiempo se muestra en la carpeta principal (*Ising-MC.cpp*). Las restantes versiones agregan sólamente loops, salvo en el caso del *Problema 8* donde la presencia del campo magnético exige ser más cuidadoso con el manejo de las probabilidades en los pasos de montecarlo. En todos los casos, se necesita del archivo con funciones "auxiliares.h" en el mismo directorio para su compilación.
 
 Los scripts en Python tienen la finalidad de levantar la información generada por la simulación, procesarla cuando sea necesario y armar con ella figuras. Las presentadas en el informe y algunas más se guardan también las carpetas de Problemas.
 
